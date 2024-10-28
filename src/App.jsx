@@ -1,21 +1,20 @@
 import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
-import HeroSection from './components/HeroSection';
-import AboutUs from './components/AboutUs';
-import Services from './components/Services';
-import CTA from './components/CTA';
 import Footer from './components/Footer';
+import Home from './pages/Home';
+import Impressum from './pages/Impressum';
 
 function App() {
   return (
-    <div>
+    <Router>
       <Header />
-      <HeroSection />
-      <AboutUs />
-      <Services />
-      <CTA />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/impressum" element={<Impressum />} />
+      </Routes>
       <Footer />
-    </div>
+    </Router>
   );
 }
 

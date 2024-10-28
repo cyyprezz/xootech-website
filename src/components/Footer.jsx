@@ -3,6 +3,8 @@ import { Box, Typography, Container, Stack, IconButton } from '@mui/material';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import EmailIcon from '@mui/icons-material/Email';
+import InfoIcon from '@mui/icons-material/Info';
+import { Link } from 'react-router-dom';
 
 function Footer() {
   return (
@@ -23,6 +25,9 @@ function Footer() {
           </IconButton>
           <IconButton color="inherit" href="mailto:info@xootech.com" aria-label="Email">
             <EmailIcon sx={{ transition: 'transform 0.3s ease', '&:hover': { transform: 'scale(1.2)' } }} />
+          </IconButton>
+          <IconButton color="inherit" component={Link} to="/impressum" sx={{color: '#fff'}}>
+            <InfoIcon sx={{ transition: 'transform 0.3s ease', '&:hover': { transform: 'scale(1.2)' } }} />
           </IconButton>
         </Stack>
       </Container>
