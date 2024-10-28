@@ -14,7 +14,7 @@ function HeroSection() {
       ref={ref}
       sx={{
         position: 'relative',
-        backgroundImage: 'url("/src/assets/hero-image.webp")', // Bildpfad anpassen
+        backgroundImage: 'url("/hero-image.webp")', // Bildpfad anpassen
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         minHeight: '400px',

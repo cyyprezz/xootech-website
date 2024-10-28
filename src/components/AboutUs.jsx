@@ -7,19 +7,19 @@ const teamMembers = [
     name: 'Jonathan Desens',
     role: 'CEO',
     description: 'Verantwortlich für die strategische Ausrichtung und den Kundenkontakt.',
-    image: '/src/assets/chris-image.webp', // Bildpfad anpassen
+    image: '/chris-image.webp', // Bildpfad anpassen
   },
   {
     name: 'Nicklas Desens',
     role: 'CTO',
     description: 'Technischer Leiter mit Fokus auf Softwareentwicklung und Datenbanken.',
-    image: '/src/assets/chris-image.webp', // Bildpfad anpassen
+    image: '/chris-image.webp', // Bildpfad anpassen
   },
   {
     name: 'Chris Xootech',
     role: 'Digital AI-Experte',
     description: 'KI-Entwicklungs-Assistent zur Unterstützung unserer innovativen Lösungen.',
-    image: '/src/assets/chris-image.webp', // Bildpfad anpassen
+    image: '/chris-image.webp', // Bildpfad anpassen
   },
 ];
 
