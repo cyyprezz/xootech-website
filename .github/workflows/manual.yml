@@ -1,31 +1,32 @@
-name: Deploy Vite App to GitHub Pages
+name: Deploy GitHub Pages
 
 on:
   push:
     branches:
-      - main  # Stelle sicher, dass dies der Branch ist, den du pushst
+      - main  # Der Branch, auf dem der Workflow laufen soll
 
 jobs:
   build-deploy:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Check out the code
-        uses: actions/checkout@v2
+      - name: Checkout repository
+        uses: actions/checkout@v3
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v2
-
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
         with:
-          node-version: '16'  # Oder die Version, die dein Projekt benötigt
+          node-version: '16'  # Empfohlene Node-Version für Vite
 
-      - name: Install dependencies and build
-        run: |
-          npm install
-          npm run build
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build project
+        run: npm run build
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist
+          publish_dir: ./dist  # Verwendet den neu erstellten dist-Ordner
+          destination_dir: .   # Optional, aber hält den gh-pages-Branch sauber
