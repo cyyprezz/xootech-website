@@ -20,7 +20,7 @@ function Header() {
   ];
 
   return (
-    <AppBar position="sticky" color="primary">
+    <AppBar position="sticky" color="primary" sx={{top: 0, height: '64px', zIndex: theme => theme.zIndex.drawer + 1}}>
       <Toolbar>
         <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
           XooTech
