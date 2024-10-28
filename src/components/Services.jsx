@@ -1,7 +1,8 @@
 import React from 'react';
-import { Box, Typography, Container, Grid, Card, CardContent } from '@mui/material';
+import { Box, Typography, Container, Grid2, Card, CardContent, Button } from '@mui/material';
 import ReceiptLongIcon from '@mui/icons-material/ReceiptLong';
 import { useInView } from 'react-intersection-observer';
+import { Link } from 'react-router-dom';
 
 const services = [
   {
@@ -45,9 +46,9 @@ function Services() {
         <Typography variant="h6" align="center" gutterBottom>
           Bei XooTech steht der Kunde im Mittelpunkt. Unsere Dienstleistungen sind auf Ihre Bedürfnisse zugeschnitten.
         </Typography>
-        <Grid container spacing={4} justifyContent="center">
+        <Grid2 container spacing={4} justifyContent="center">
           {services.map((service, index) => (
-            <Grid item xs={12} sm={6} md={4} key={index}>
+            <Grid2 item xs={12} sm={6} md={4} key={index}>
               <Card sx={{ maxWidth: 345, margin: 'auto', textAlign: 'center', padding: 2 }}>
                 {service.icon && <Box sx={{ mb: 2 }}>{service.icon}</Box>}
                 <CardContent>
@@ -59,9 +60,16 @@ function Services() {
                   </Typography>
                 </CardContent>
               </Card>
-            </Grid>
+            </Grid2>
           ))}
-        </Grid>
+        </Grid2>
+        <Box sx={{py: 4, textAlign: 'center'}}>
+          <Typography variant='h5'gutterBottom>Kontaktieren Sie uns</Typography>
+          <Typography variant='body1'>
+            Haben Sie Fragen oder möchten Sie mehr über unsere Services erfahren? Wir freuen uns auf Ihre Anfrage!
+          </Typography>
+          <Button component={Link} to="/kontakt" variant="contained" color="primary" sx={{ mt: 2}}>Jetzt kontaktieren</Button>
+        </Box>
       </Container>
     </Box>
   );
