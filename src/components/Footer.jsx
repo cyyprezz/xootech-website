@@ -23,7 +23,7 @@ function Footer() {
           <IconButton color="inherit" href="https://github.com" target="_blank" aria-label="GitHub">
             <GitHubIcon sx={{ transition: 'transform 0.3s ease', '&:hover': { transform: 'scale(1.2)' } }} />
           </IconButton>
-          <IconButton color="inherit" href="mailto:info@xootech.com" aria-label="Email">
+          <IconButton color="inherit" href="mailto: nicki.desens@gmail.com" aria-label="Email">
             <EmailIcon sx={{ transition: 'transform 0.3s ease', '&:hover': { transform: 'scale(1.2)' } }} />
           </IconButton>
           <IconButton color="inherit" component={Link} to="/impressum" sx={{color: '#fff'}}>
