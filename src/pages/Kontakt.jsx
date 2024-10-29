@@ -11,9 +11,9 @@ function Kontakt() {
     phone: '',
     subject: '',
     message: '',
+    capatcha_token: ''
   });
   const [captchaValue, setCaptchaValue] = useState(null);
-  const [ statusMessage, setStatusMessage ] = useState(null);
   const [ status, setStatus ] = useState({message: "", serverty: "success"})
   const [ open, setOpen ] = useState(false)
   const navigate = useNavigate();
@@ -24,7 +24,7 @@ function Kontakt() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    if (!captchaValue) {
+    if (!form.capatcha_token) {
       setStatus({message: 'Bitte verifiziere dich über reCAPTCHA.', serverty: 'error'});
       setOpen(true);
       return;
@@ -111,7 +111,7 @@ function Kontakt() {
         />
         <ReCAPTCHA
           sitekey="6LdI_W4qAAAAAN-PzBX4nYIcmxi8XF3vQq_Sl2lW"  // reCAPTCHA Sitekey einfügen
-          onChange={(value) => setCaptchaValue(value)}
+          onChange={handleChange}
         />
         <Button type="submit" variant="contained" color="primary">
           Anfrage senden
