@@ -14,7 +14,7 @@ function Footer() {
           &copy; 2024 XooTech - Alle Rechte vorbehalten.
         </Typography>
         <Typography variant="body2" align="center" gutterBottom>
-          Kontakt: info@xootech.com
+          Kontakt: nicklas.desens@proton.me
         </Typography>
         <Stack direction="row" justifyContent="center" spacing={2}>
           <IconButton color="inherit" href="https://linkedin.com" target="_blank" aria-label="LinkedIn">

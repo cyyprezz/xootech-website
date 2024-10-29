@@ -11,39 +11,24 @@ function Impressum() {
       <Divider sx={{ mb: 4, color: '#1e88e5' }} />
       
       <Typography variant="h6" gutterBottom sx={{color: '#f5f5f5' }}>Angaben gemäß § 5 TMG</Typography>
-      <Typography variant="body1" paragraph>
-        XooTech GmbH<br />
-      </Typography>
       
       <Typography variant="h6" gutterBottom sx={{color: '#f5f5f5' }}>Vertreten durch:</Typography>
       <Typography variant="body1" paragraph>
-        Jonathan Desens (CEO)<br />
-        Nicklas Desens (CTO)
+        Nicklas Desens <br />
+        Stuttgart 
+        Germany
       </Typography>
 
       <Typography variant="h6" gutterBottom sx={{color: '#f5f5f5' }}>Kontakt</Typography>
       <Typography variant="body1" paragraph>
-        Telefon: <br />
-        E-Mail: 
+        E-Mail: nicklas.desens@proton.me
       </Typography>
 
-      <Typography variant="h6" gutterBottom sx={{color: '#f5f5f5' }}>Registereintrag</Typography>
+      <Typography variant="h6" gutterBottom sx={{color: '#f5f5f5' }}>Berufsbezeichnung: Freiberuflicher [Beruf, z. B. IT-Berater]</Typography>
+   
+      <Typography variant="h6" gutterBottom sx={{color: '#f5f5f5' }}>Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV</Typography>
       <Typography variant="body1" paragraph>
-        Eintragung im Handelsregister.<br />
-        Registergericht: Amtsgericht Musterstadt<br />
-        Registernummer: HRB 123456
-      </Typography>
-
-      <Typography variant="h6" gutterBottom sx={{color: '#f5f5f5' }}>Umsatzsteuer-ID </Typography>
-      <Typography variant="body1" paragraph>
-        Umsatzsteuer-Identifikationsnummer gemäß §27 a Umsatzsteuergesetz: 
-      </Typography>
-
-      <Typography variant="h6" gutterBottom sx={{color: '#f5f5f5' }}>Haftung für Inhalte</Typography>
-      <Typography variant="body1" paragraph>
-        Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. 
-        Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen 
-        zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen.
+        Nicklas Desens
       </Typography>
 
       <Typography variant="h6" gutterBottom sx={{color: '#f5f5f5' }}>Haftung für Links</Typography>

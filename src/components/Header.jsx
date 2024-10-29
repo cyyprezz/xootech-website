@@ -35,7 +35,7 @@ function Header() {
               <List>
                 {menuItems.map((item) => (
                   <ListItem button component="a" href={item.link} key={item.text} onClick={toggleDrawer(false)}>
-                    <ListItemText primary={item.text} />
+                    <ListItemText primary={item.text} color='#fff'/>
                   </ListItem>
                 ))}
               </List>
