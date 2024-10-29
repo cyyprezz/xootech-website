@@ -4,12 +4,13 @@ import App from './App';
 import { ThemeProvider } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
 import theme from './theme';
+import { Router } from 'react-router-dom';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <ThemeProvider theme={theme}>
       <CssBaseline /> {/* Aktiviert Dark Mode und setzt standardmäßige Stile */}
-      <App />
+        <App />
     </ThemeProvider>
   </React.StrictMode>
 );

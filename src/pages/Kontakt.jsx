@@ -36,7 +36,8 @@ function Kontakt() {
     // Hier würde die Anfrage an den Server gesendet werden
     try  {
       console.log(JSON.stringify(form))
-      const response = await fetch('https://xootech-api-914808594048.europe-west1.run.app/send-email', {
+    //  const response = await fetch('https://xootech-api-914808594048.europe-west1.run.app/send-email', {
+    const response = await fetch("http://localhost:8080/send-email", {
         method: 'POST',
         headers: { 'Content-Type': 'application/json'},
         body: JSON.stringify(form)
