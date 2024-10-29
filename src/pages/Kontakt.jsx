@@ -22,6 +22,10 @@ function Kontakt() {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
 
+  const handleCapChange = (e) => {
+    setForm({...form, capatcha_token: e})
+  }
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (!form.capatcha_token) {
@@ -31,6 +35,7 @@ function Kontakt() {
     }
     // Hier würde die Anfrage an den Server gesendet werden
     try  {
+      console.log(JSON.stringify(form))
       const response = await fetch('https://xootech-api-914808594048.europe-west1.run.app/send-email', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json'},
@@ -111,7 +116,7 @@ function Kontakt() {
         />
         <ReCAPTCHA
           sitekey="6LdI_W4qAAAAAN-PzBX4nYIcmxi8XF3vQq_Sl2lW"  // reCAPTCHA Sitekey einfügen
-          onChange={handleChange}
+          onChange={handleCapChange}
         />
         <Button type="submit" variant="contained" color="primary">
           Anfrage senden
