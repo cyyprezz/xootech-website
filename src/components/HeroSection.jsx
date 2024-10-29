@@ -37,6 +37,9 @@ function HeroSection() {
         <Typography variant="h6" component="p" gutterBottom>
           Innovative Lösungen für die digitale Zukunft. Mit Leidenschaft für Technologie und einem klaren Fokus auf Benutzerfreundlichkeit.
         </Typography>
+        <Typography variant="h6" component="p" gutterBottom>
+         Gründungsphase - Webseite befindet sich noch im Aufbau. 
+        </Typography>
       </Container>
       </Box>
     </Box>
