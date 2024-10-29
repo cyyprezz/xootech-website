@@ -14,7 +14,7 @@ function Kontakt() {
     capatcha_token: ''
   });
   const [captchaValue, setCaptchaValue] = useState(null);
-  const [ status, setStatus ] = useState({message: "", serverty: "success"})
+  const [ status, setStatus ] = useState({message: "", serverty: ""})
   const [ open, setOpen ] = useState(false)
   const navigate = useNavigate();
 
